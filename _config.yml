@@ -1,7 +1,7 @@
 title: FASCO 外航服务公司 / Foreign Airlines Service
 email: info@gzfasco.com
-url: https://fasco-gz.github.io
-baseurl: ""
+url: https://gzfasco.github.io
+baseurl: "can-fasco"
 theme: minima
 plugins:
   - jekyll-seo-tag
