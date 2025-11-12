@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    {% include head.html %}
+  </head>
+  <body>
+    {% include nav.html %}
+    <main class="main">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="cols">
+          <div>
+            <h4>FASCO</h4>
+            <p>Guangzhou Foreign Airlines Service Commercial Ltd.</p>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>Email: <a href="mailto:info@gzfasco.com">info@gzfasco.com</a></p>
+          </div>
+          <div>
+            <h4>Links</h4>
+            <p><a href="{{ '/pages/services.html' | relative_url }}">服务 / Services</a></p>
+          </div>
+        </div>
+        <p class="copy">© {{ "now" | date: "%Y" }} FASCO · All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo.jpg' | relative_url }}" alt="FASCO" class="brand-logo">
+      <span class="sub">Foreign Airlines Service</span>
+    </a>
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="hamburger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav>
+      <ul>
+        {% for item in site.nav %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
